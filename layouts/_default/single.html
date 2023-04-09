@@ -31,7 +31,8 @@
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
+    <!--https://www.hackification.io/software-development/hugo/html/inline-adsense-ads/-->
+    {{- else }}{{ replace .Content "<!--advert-->" (partial "google/adsense.html" .) | safeHTML }}{{ end }}
   </div>
   {{- end }}
 

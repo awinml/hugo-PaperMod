@@ -253,6 +253,14 @@
     font-weight: normal;
 }
 
+/* https://www.hackification.io/software-development/hugo/html/inline-adsense-ads/ */ 
+.advert-inline {
+  margin: 6rem 0 4rem 0;
+  padding: 1rem 0 1rem;
+  border-top: dotted 4px #ddd;
+  border-bottom: dotted 4px #ddd;
+}
+
 .toc {
     margin: 0 2px 40px 2px;
     border: 1px solid var(--border);
